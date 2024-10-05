@@ -4,6 +4,7 @@ const decodeToken = require('../middleware/decodeToken')
 
 const routers = express.Router();
 
+// route to get all users
 routers.get("/getAllUsers", userController.getAllUsers)
 routers.post("/register", userController.register)
 routers.post("/login", userController.login)

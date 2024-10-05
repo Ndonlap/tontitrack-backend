@@ -4,6 +4,7 @@ const decodeToken = require('../middleware/decodeToken')
 
 const routers = express.Router();
 
+// endpoiny yo create a tontine
 routers.post('/createTontine', decodeToken, tontineController.createTontine);
 routers.get('/getTontineByMember', decodeToken, tontineController.getTontineByMember);
 routers.put('/joinTontine', decodeToken, tontineController.joinTontine);
